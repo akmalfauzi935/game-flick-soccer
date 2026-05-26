@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom game styling */
+@layer utilities {
+  .text-shadow-game {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.9), -1px -1px 0px rgba(255, 255, 255, 0.2);
+  }
+  .text-shadow-neon {
+    text-shadow: 0 0 10px rgba(234, 179, 8, 0.6), 0 0 20px rgba(234, 179, 8, 0.4);
+  }
+  .border-game {
+    border: 3px solid #1e293b;
+    box-shadow: 4px 4px 0px #1e293b;
+  }
+  .button-game {
+    position: relative;
+    border: 3px solid #0f172a;
+    box-shadow: 0px 4px 0px #0f172a;
+    transition: all 0.1s ease;
+  }
+  .button-game:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px #0f172a;
+  }
+}
+
+/* Customize scrollbar for retro game menu */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: #0f172a;
+}
+

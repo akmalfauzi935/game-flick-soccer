@@ -1,0 +1,6 @@
+{
+  "name": "Flick Soccer Mobile",
+  "description": "Game sepak bola mobile gratis yang seru dan adiktif. Tembak bola dengan usapan jari (flick) atau drible melewati rintangan untuk mencetak gol!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
